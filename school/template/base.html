@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block tittle %}   {% endblock tittle %}
+    </title>
+    <link rel="stylesheet" href="static/school.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="left">Programmer School</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="about">About</a></li>
+                    <li><a href="contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    {% block body %}  {% endblock body %}
+
+    <footer>
+        <div class="footer">
+            <div class="footer-rig">
+                Copyright &copy; Programmer School | All Rights Reserved
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
